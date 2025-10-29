@@ -31,7 +31,8 @@ public class ex02 {
                 aux += (char)('a' + (base + desloc) % 26);
             }
             else if (ch >= 'A' && ch <= 'Z') {
-
+                base = ch - 'A';
+                aux += (char)('A' + (base + desloc) % 26);
             }
             else {
                 aux += ch;
@@ -43,3 +44,4 @@ public class ex02 {
 
 
 }
+
